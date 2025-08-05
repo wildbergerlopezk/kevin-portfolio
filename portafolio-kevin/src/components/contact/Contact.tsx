@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
           </a>
 
           <a
-            href="/CV-Kevin-Wildberger.pdf"
+            href="/KevinWildbergerCV.pdf"
             download
             className="contact-method"
           >
