@@ -1,0 +1,38 @@
+/* NavItem Styles */
+.nav-item {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: all 0.3s ease; /* transition-all duration-300 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #cbd5e1; /* text-slate-300 */
+  user-select: none;
+  width: auto; /* ancho por defecto */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover */
+.nav-item:hover {
+  color: #22d3ee; /* text-cyan-400 */
+  background-color: rgba(30, 41, 59, 0.5); /* bg-slate-800/50 */
+}
+
+/* Activo */
+.nav-item.active {
+  color: #22d3ee; /* text-cyan-400 */
+  background-color: rgba(6, 182, 212, 0.1); /* bg-cyan-400/10 */
+}
+
+/* Responsive: móviles, ancho completo para mejor área táctil */
+@media (max-width: 767px) {
+  .nav-item {
+    width: 100%;
+    padding: 0.75rem 1rem; /* un poco más grande para móvil */
+    font-size: 1.125rem;
+    display: block;
+  }
+}

@@ -1,0 +1,63 @@
+/* ABOUT SECTION STYLES */
+.about {
+  padding: 5rem 1rem;
+  background: #0f172a;
+}
+
+.about-content {
+  max-width: 64rem; /* 1024px */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-text-container {
+  max-width: none;
+}
+
+.about-text {
+  font-size: 1.125rem; /* 18px */
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-highlight {
+  color: #06b6d4;
+  font-weight: 600;
+}
+
+/* ----------- Responsive ----------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .about {
+    padding: 3.5rem 1rem;
+  }
+  .about-content {
+    max-width: 90%;
+  }
+  .about-text {
+    font-size: 1rem; /* 16px */
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .about {
+    padding: 2.5rem 1rem;
+  }
+  .about-content {
+    max-width: 100%;
+  }
+  .about-text {
+    font-size: 0.9rem; /* 14.5px */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}

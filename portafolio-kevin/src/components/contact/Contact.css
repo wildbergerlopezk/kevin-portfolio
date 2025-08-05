@@ -1,0 +1,186 @@
+/* CONTACT SECTION STYLES */
+.contact {
+  padding: 5rem 1rem;
+}
+
+.contact-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid #374151;
+  text-decoration: none;
+  color: #94a3b8;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  color: #94a3b8;
+}
+
+.contact-method-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #06b6d4;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover .contact-method-icon {
+  transform: scale(1.1);
+}
+
+.contact-form {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #1e293b;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #06b6d4;
+}
+
+.form-input::placeholder {
+  color: #64748b;
+}
+
+.form-textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-submit:hover {
+  transform: scale(1.05);
+}
+
+/* Pantallas grandes - 4 elementos en una fila */
+@media (min-width: 1024px) {
+  .contact-methods {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Pantallas medianas - 4 elementos en una fila pero más compactos */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-methods {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .contact-method {
+    padding: 1.25rem 1rem;
+  }
+  
+  .contact-method-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+/* Tablets pequeñas - 2 elementos por fila */
+@media (min-width: 640px) and (max-width: 767px) {
+  .contact-methods {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Móviles - 1 elemento por fila */
+@media (max-width: 639px) {
+  .contact {
+    padding: 3.5rem 1rem;
+  }
+  
+  .contact-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-method {
+    padding: 1rem;
+  }
+  
+  .contact-form {
+    max-width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-submit {
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  .contact {
+    padding: 2.5rem 1rem;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
