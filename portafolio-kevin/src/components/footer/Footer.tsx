@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-link-container">
           <a 
-            href="https://elytech.com.py" 
+            href="https://elytechpy.es" 
             className="footer-link"
             target="_blank"
             rel="noopener noreferrer"
