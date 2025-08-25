@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            elytechpy.com
+            elytechpy.es
           </a>
         </div>
         <p className="footer-copyright">
